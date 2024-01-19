@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'Hahmlet-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #fff;
+  font-family: 'Noto Serif KR', serif;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.title {
+  font-family: 'Hahmlet-Regular';
+  font-size: 4rem;
+  color: #a48f60;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.title2 {
+  font-family: 'Hahmlet-Regular';
+  font-size: 3rem;
+  color: #5a4c2d;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; */
+}
+
+.information {
+  background-image: url(/images/m1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  padding-top: 15vh;
+}
+
+.cast {
+  background: url(/images/m2.jpg) #5a4c2d;
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: flex;
+  align-items: end;
+  margin: 0 auto;
+  padding: 0 6rem 7rem;
+}
+
+.site {
+  background: url(/images/m3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  padding-top: 70vh;
+}
+.btn {
+  background-color: #5a4c2d;
+  font-size: 1.5rem;
+  padding: 1rem 3.5rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: #a48f60;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+  .title2 {
+    font-size: 2rem;
+  }
+  .information p {
+    font-size: 1rem;
+    margin: 0 3rem 0 3rem;
+  }
+
+  .cast {
+    background: url(/images/m2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+  }
+
+  .btn {
+    background-color: #5a4c2d;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .btn:hover {
+    background-color: #a48f60;
+  }
+}
